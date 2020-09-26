@@ -1,12 +1,14 @@
 
-# Asistent Automat pentru un student la medicina  <img src="heartSmall.png" alt="A cool heart"/>
+# Asistent Automat pentru un student la medicina  <img src="surgery-prostate-cancer.png" alt="A cool heart"/>
 
 ## Obiective
-Dezvoltarea unei aplicatii didactice care sa ajute studentii la medicina sa invete.
+Dezvoltarea unui sistem de asistenta medicala pentru identificarea cancerului de prostata
 
 
 ## Ideea de baza
-In procesul de invatare desfasurat de un student la medicina ar fi utila o aplicatie (mobila) care sa ii prezinte vizual informatii relevante despre organele si bolile investigate. Astfel se doreste o aplicatie care, plecand de la informatii preluate in format RMN sau CT, sa permita vizualizarea 3D a unui organ (in intregime sau partial, din diferite unghiuri, reliefand anumite detalii – de ex vizualizarea inimii cu camerele ei sau doar a unei camere, sistemul vascular din inima, etc.), precum si a unor defecte posibile (identificarea automata a acestor defecte si vizualizarea lor – de ex. Fibroza atriala). 
+Cancerul de prostată (CP) este cea de-a treia cauză de deces în rândul bărbaţilor, după cancerul pulmonar şi cel colorectal.
+Alegerea tratamentului adecvat depinde de mai mulţi factori printre care stadiul bolii, potențialele afecțiuni asociate, vârsta pacientului, eventualele opțiuni terapeutice anterioare şi nu în ultimul rând preferinţele pacientului.  <img src="Prostate_Cancer_Stages.png" alt="stages"/>
+Monitorizarea si identificarea celulelor canceroase este foarte importanta.
 
 
 ## TO DO List
@@ -22,8 +24,12 @@ In procesul de invatare desfasurat de un student la medicina ar fi utila o aplic
 
 ## Date si referinte
 **Imagini**
-1. http://segchd.csail.mit.edu/data.html
-2. https://grand-challenge.org/challenges/
+Imagini - prostata
+1. https://wiki.cancerimagingarchive.net/display/Public/PROSTATE-MRI
+2. https://prostatemrimagedatabase.com/
+3. see datasets from section "Imagind data" of this [article](http://tau.amegroups.com/article/view/24493/23261)
+4. see prostate datasets from https://www.cancerimagingarchive.net/collections/
+
 
 **Evaluare**
 1. VISCERAL tool http://www.visceral.eu/resources/evaluatesegmentation-software/
@@ -32,23 +38,14 @@ In procesul de invatare desfasurat de un student la medicina ar fi utila o aplic
 **Metode de lucru**
 1. Vezhnevets, Vladimir, and Vadim Konouchine. "GrowCut: Interactive multi-label ND image segmentation by cellular automata." proc. of Graphicon. Vol. 1. No. 4. 2005.
 2. Kauffmann, Claude, and Nicolas Piché. "Seeded ND medical image segmentation by cellular automaton on GPU." International journal of computer assisted radiology and surgery 5.3 (2010): 251-262.
-3. Peng Peng, Karim Lekadir,  Ali Gooya, Ling Shao, Steffen E. Petersen, Alejandro F. Frangi, A review of heart chamber segmentation for  structural and functional analysis using cardiac magnetic resonance imaging, Magn Reson Mater Phy (2016) 29:155–195
-4. Catalina Tobon-Gomez, Jochen Peters, Juergen Weese, Karen Pinto, Rashed Karim, Tobias Schaeffter, Reza Razavi, and Kawal S. Rhode, Left Atrial Segmentation Challenge: A Unified Benchmarking Framework, STACOM 2013, LNCS 8330, pp. 1–13, 2014
-5. Catalina Tobon-Gomez et al., Benchmark for algorithms segmenting the left
-atrium from 3D CT and MRI datasets, IEEE Transactions on Medical Imaging, 2015
-6. Bram van Ginneken, Fifty years of computer analysis in chest imaging: rule-based, Radiol Phys Technol, 2017
-7. Lequan Yu, Xin Yang, Jing Qin and Pheng-Ann Heng 
-3D FractalNet: Dense volumetric segmentation for cardiovascular MRI volumes, 2017 
-8. Jelmer M. Wolterink, Tim Leiner, Max A. Viergever and Ivana Isgum 
-Dilated convolutional neural networks for cardiovascular MR segmentation in congenital heart disease, 2017
-9. Rahil Shahzad, Shan Gao, Qian Tao, Oleh Dzyubachyk and Rob van der Geest, Automated cardiovascular segmentation in patients with congenital heart disease from 3D CMR scans: Combining multi-atlases and level-sets, 2017 
-10. Rezaei, Mina, Haojin Yang, and Christoph Meinel. "Whole heart and great vessel segmentation with context-aware of generative adversarial networks." Bildverarbeitung für die Medizin 2018. Springer Vieweg, Berlin, Heidelberg, 2018. 353-358.
-11. Yu, Lequan, et al. "Automatic 3D cardiovascular MR segmentation with densely-connected volumetric convnets." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2017.
-12. Payer, Christian, et al. "Multi-label whole heart segmentation using CNNs and anatomical label configurations." International Workshop on Statistical Atlases and Computational Models of the Heart. Springer, Cham, 2017.
-13. Yang, Guang, et al. "Multiview Sequential Learning and Dilated Residual Learning for a Fully Automatic Delineation of the Left Atrium and Pulmonary Veins from Late Gadolinium-Enhanced Cardiac MRI Images." 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). IEEE, 2018.
-14. Zhang, Tinghong, et al. "Multiple Attention Fully Convolutional Network for Automated Ventricle Segmentation in Cardiac Magnetic Resonance Imaging." Journal of Medical Imaging and Health Informatics 9.5 (2019): 1037-1045.
-15. Zhang, Dong, et al. "Direct Quantification for Coronary Artery Stenosis Using Multiview Learning." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2019.
-16. Zhuang, Xiahai, et al. "Evaluation of Algorithms for Multi-Modality Whole Heart Segmentation: An Open-Access Grand Challenge." arXiv preprint arXiv:1902.07880 (2019).
-
-
+3. Wildeboer, R. R., van Sloun, R. J., Wijkstra, H., & Mischi, M. (2020). Artificial intelligence in multiparametric prostate cancer imaging with focus on deep-learning methods. Computer Methods and Programs in Biomedicine, 189, 105316. [link](https://reader.elsevier.com/reader/sd/pii/S0169260719310442?token=2D40484780B1B45D0D904AD76502DA6841EE3E1DFFA53FB9CC4B1F25666391AEA7732747F8D5DDDCC825094F2D8EB888)
+4. Abbasi, A. A., Hussain, L., Awan, I. A., Abbasi, I., Majid, A., Nadeem, M. S. A., & Chaudhary, Q. A. (2020). Detecting prostate cancer using deep learning convolution neural network with transfer learning approach. Cognitive Neurodynamics, 1-11. [link](https://link.springer.com/article/10.1007/s11571-020-09587-5#Sec2)
+5. Andras, I., Crisan, D., Cata, E., Tamas-Szora, A., Caraiani, C., Coman, R. T., ... & Crisan, N. (2019). MRI-TRUS fusion guided prostate biopsy–initial experience and assessment of the role of contralateral lobe systematic biopsy. Medical ultrasonography, 21(1), 37-44. [link](https://medultrason.ro/medultrason/index.php/medultrason/article/view/1705/1290)
+6. Zhu, C. Z., Ting, H. N., Ng, K. H., & Ong, T. A. (2019). A review on the accuracy of bladder cancer detection methods. Journal of Cancer, 10(17), 4038. [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6692607/pdf/jcav10p4038.pdf)
+7. Lovegrove, C. E., Matanhelia, M., Randeva, J., Eldred-Evans, D., Tam, H., Miah, S., ... & Shah, T. T. (2018). Prostate imaging features that indicate benign or malignant pathology on biopsy. Translational andrology and urology, 7(Suppl 4), S420. [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6178322/pdf/tau-07-S4-S420.pdf)
+8. Andras, I., Mazzone, E., van Leeuwen, F. W., De Naeyer, G., van Oosterom, M. N., Beato, S., ... & Crisan, N. (2019). Artificial intelligence and robotics: a combination that is changing the operating room. World journal of urology, 1-8. [link](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1007/s00345-019-03037-6.pdf&casa_token=-c9oeyzp5f0AAAAA:tnkHHXthKDC3fbS3Uhuh9gSMpLbkJmo_r7JX8hIfSpzpY0kanL7JdB7shbaQqs3cMtQDNSGc0yYAbFBVyA)
+9. Schelb, P., Kohl, S., Radtke, J. P., Wiesenfarth, M., Kickingereder, P., Bickelhaupt, S., ... & Maier-Hein, K. H. (2019). Classification of cancer at prostate MRI: deep learning versus clinical PI-RADS assessment. Radiology, 293(3), 607-617. [link](https://pubs.rsna.org/doi/10.1148/radiol.2019190938)
+10. Cuocolo, R., Cipullo, M. B., Stanzione, A., Ugga, L., Romeo, V., Radice, L., ... & Imbriaco, M. (2019). Machine learning applications in prostate cancer magnetic resonance imaging. European radiology experimental, 3(1), 1-8. [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6686027/pdf/41747_2019_Article_109.pdf)
+11. Willemink, M. J., Koszek, W. A., Hardell, C., Wu, J., Fleischmann, D., Harvey, H., ... & Lungren, M. P. (2020). Preparing medical imaging data for machine learning. Radiology, 295(1), 4-15.[link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7104701/)
+12. Andrey Fedorov, Multiparametric MRI in Prostate Cancer: Open source tools for quantitative analysis and data standardization [link](http://amos3.aapm.org/abstracts/pdf/137-41561-452581-142232-851680087.pdf)
 
