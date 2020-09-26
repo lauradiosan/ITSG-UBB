@@ -1,5 +1,5 @@
 
-# Asistent Automat pentru un student la medicina  <img src="prostateCancer.png" alt="A cool heart"/>
+# Asistent Automat pentru un student la medicina  <img src="prostateCancer.png" alt="A cool heart" width="100"/>
 
 ## Obiective
 Dezvoltarea unui sistem de asistenta medicala pentru identificarea cancerului de prostata
