@@ -1,5 +1,5 @@
 
-# Asistent Automat pentru un student la medicina  <img src="prostateCancer.png" alt="A cool heart" width="100"/>
+# Asistent Automat pentru un student la medicina  <img width="150" src="prostateCancer.png" alt="prostate"/>
 
 ## Obiective
 Dezvoltarea unui sistem de asistenta medicala pentru identificarea cancerului de prostata
@@ -7,7 +7,9 @@ Dezvoltarea unui sistem de asistenta medicala pentru identificarea cancerului de
 
 ## Ideea de baza
 Cancerul de prostată (CP) este cea de-a treia cauză de deces în rândul bărbaţilor, după cancerul pulmonar şi cel colorectal.
-Alegerea tratamentului adecvat depinde de mai mulţi factori printre care stadiul bolii, potențialele afecțiuni asociate, vârsta pacientului, eventualele opțiuni terapeutice anterioare şi nu în ultimul rând preferinţele pacientului.  <img src="Prostate_Cancer_Stages.png" alt="stages"/>
+Alegerea tratamentului adecvat depinde de mai mulţi factori printre care stadiul bolii, potențialele afecțiuni asociate, vârsta pacientului, eventualele opțiuni terapeutice anterioare şi nu în ultimul rând preferinţele pacientului.  
+<img src="Prostate_Cancer_Stages.png" alt="stages"/>
+
 Monitorizarea si identificarea celulelor canceroase este foarte importanta.
 
 
