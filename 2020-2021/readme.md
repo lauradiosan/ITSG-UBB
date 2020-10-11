@@ -3,6 +3,7 @@
 ## Cursuri
 
 Sapt 2: [Introducere](readme.md)
+
 Sapt 3: [ML review](Lectures/01_ML_review.ppt)
 
 ## Despre proiecte
