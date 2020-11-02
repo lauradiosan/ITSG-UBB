@@ -51,3 +51,35 @@ Imagini - prostata
 11. Willemink, M. J., Koszek, W. A., Hardell, C., Wu, J., Fleischmann, D., Harvey, H., ... & Lungren, M. P. (2020). Preparing medical imaging data for machine learning. Radiology, 295(1), 4-15.[link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7104701/)
 12. Andrey Fedorov, Multiparametric MRI in Prostate Cancer: Open source tools for quantitative analysis and data standardization [link](http://amos3.aapm.org/abstracts/pdf/137-41561-452581-142232-851680087.pdf)
 
+
+
+**New details**
+
+Prostata
+- lucrari:
+    * lucrare recenta https://www.nature.com/articles/s41598-020-71080-0
+- databases: 
+    * 26 MR datasets - https://wiki.cancerimagingarchive.net/display/Public/PROSTATE-MRI#327726088352fbd47ff4147b574d72f5b596e4a
+    * https://promise12.grand-challenge.org/ - great challenge, one can check methods, articles
+    * https://zenodo.org/record/16396#.X57-1IgzaM9 - 3 patients MR and ultrasound
+    * https://prostatemrimagedatabase.com/ - 230 datasets - I have no info about quality
+- theory - prostate imaging -
+    * https://www.slideshare.net/abd_ellah_nazeer/presentation1-mri-imaging-of-the-prostate
+    * https://www.slideshare.net/abd_ellah_nazeer/presentation1pptx-radiological-imaging-of-prostatic-diseases - sl48/49  
+    * Kato Zoltan - linear registration of medical data - http://www.inf.u-szeged.hu/rgvc/demos.php?did=affbinregdemo
+    * 3D -  http://www.inf.u-szeged.hu/rgvc/demos.php?did=affbin3dregdemo
+
+Vezica urinară
+- lucrari
+    * recent review paper - MRI meta analysis: - https://euoncology.europeanurology.com/article/S2588-9311(20)30032-8/fulltext
+    * paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6690492/ - 2019 - VI-RADS
+- databases 
+    * http://www.visceral.eu/
+    * bladder
+        - 19 MRI - mouse, xenograft model - 2019 - https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52757379120 
+        - human participants - multimodal imaging - https://wiki.cancerimagingarchive.net/display/Public/TCGA-BLCA#1605636778b0bc3193ac47e9a70f2dcc3b72b99e
+- theory 
+    * urinary stone detection - https://pubs.rsna.org/doi/10.1148/ryai.2019180066 - 2019
+    * MRI kidney/urinary tract - https://onlinelibrary.wiley.com/doi/pdf/10.1002/jmri.20700
+
+
