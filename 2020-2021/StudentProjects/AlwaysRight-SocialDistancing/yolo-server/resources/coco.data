@@ -1,0 +1,4 @@
+classes= 80
+valid  = coco_testdev
+names = resources/coco.names
+eval=coco

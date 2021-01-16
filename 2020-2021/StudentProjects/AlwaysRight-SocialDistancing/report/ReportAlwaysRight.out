@@ -1,0 +1,22 @@
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 What? Why? How?}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{1.2 Paper structure and original contribution\(s\)}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{2 Scientific Problem}{}% 4
+\BOOKMARK [1][-]{section.2.1}{2.1 Problem definition}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{2.2 Input}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{2.3 Output}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{3 State of the art/Related work}{}% 8
+\BOOKMARK [0][-]{chapter.4}{4 Investigated approach}{}% 9
+\BOOKMARK [1][-]{section.4.1}{4.1 Algorithm description}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Person Detection}{section.4.1}% 11
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Room monitoring system}{section.4.1}% 12
+\BOOKMARK [1][-]{section.4.2}{4.2 Tools and technologies}{chapter.4}% 13
+\BOOKMARK [0][-]{chapter.5}{5 Application \(numerical validation\)}{}% 14
+\BOOKMARK [1][-]{section.5.1}{5.1 Methodology}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.2}{5.2 Data}{chapter.5}% 16
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 COCO dataset}{section.5.2}% 17
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 INRIA dataset}{section.5.2}% 18
+\BOOKMARK [1][-]{section.5.3}{5.3 Results}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.4}{5.4 Analysis of Aspects Concerning the Social Impact}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Improvements to initial approach}{section.5.4}% 21
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion and future work}{}% 22

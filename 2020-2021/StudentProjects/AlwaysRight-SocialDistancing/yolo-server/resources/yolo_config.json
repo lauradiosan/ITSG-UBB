@@ -1,0 +1,5 @@
+{
+  "weights_path": "./resources/yolov3-tiny.weights",
+  "config_path": "./resources/yolov3-tiny.cfg",
+  "labels_path": "./resources/coco.data"
+}

@@ -1,0 +1,96 @@
+
+.main-page {
+  background-color: #fafafa;
+}
+
+html {
+  background-color: #fafafa;
+}
+
+/* LOGO CONTAINER */
+header {
+  background-color: #e3f2fd;
+  max-height: 200px;
+}
+
+.title {
+  color: #0a2463;
+  padding: 5px;
+  border-bottom: 4px solid #7e7f9a;
+}
+
+.title2 {
+  color: #0a2463;
+  padding: 5px;
+  border-bottom: 4px solid #7e7f9a;
+  margin: 0 10px;
+}
+
+.yellow-p {
+  color:  #FEF5EF;
+  padding: 10px;
+  background-color: #3f8efc;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.members-p {
+  color: #0a2463;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.logo-container {
+  height: 50px;
+}
+
+.link-btn {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/* INTRO CONTAINER */
+.intro-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+}
+
+
+/* BUTTONS STYLE */
+.tableButton {
+  background-color:#0a2463; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.tableStyle{
+  background-color: #3f8efc;
+  margin: 30px auto;
+  color: white;
+  max-width: 1100px;
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

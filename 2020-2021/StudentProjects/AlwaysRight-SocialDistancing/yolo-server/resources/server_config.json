@@ -1,0 +1,8 @@
+{
+  "image_rest_api": "/rest/image",
+  "rooms": {
+    "1": "http://192.168.3.2:1332",
+    "2": "mock_address",
+    "3": "mock_address"
+  }
+}

@@ -1,0 +1,9 @@
+.DS_STORE
+venv/
+.idea/
+examples/
+yolov3.weights
+yolov3.cfg
+__pycache__/
+node_modules/
+
