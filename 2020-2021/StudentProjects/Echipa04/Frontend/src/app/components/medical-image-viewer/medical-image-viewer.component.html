@@ -1,0 +1,10 @@
+<div class="backArrow" (click)="returnToPreviousPage()"></div>
+<nav-bar class="nav-bar"></nav-bar>
+<div *ngIf="imageData && imageData.length" class="image-view-container">
+    <div class="imageName">Image: {{imageName}}</div>
+    <img [src]="('data:image/png;base64,' + imageData[value]) | safeHtml" class="imageFrame"/>
+    <div class="slider-container">
+        <ngx-slider *ngIf="sliderInit" class="imageSlider" [(value)]="value" [options]="options"></ngx-slider>
+    </div>
+    <div *ngIf="imageName" class="archiveDownload" (click)="saveAsZip()">{{'Download_Archive' | transformText}}</div> 
+</div>

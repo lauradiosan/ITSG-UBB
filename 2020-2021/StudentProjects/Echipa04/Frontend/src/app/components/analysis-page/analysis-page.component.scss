@@ -1,0 +1,146 @@
+@import '../../shared/assets/variables.scss';
+
+.analyse-container {
+    display: flex;
+
+    .upload-container {
+        display: flex;
+        align-items: center;
+        width: 80vh;
+        justify-content: center;
+        flex-flow: column;
+
+        .image-upload-wrap {
+            width: 53vh;
+            position: relative;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.1s;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+        }
+            
+        .drag-text {
+            text-align: center;
+            height: 100%;
+            border: 4px dashed white;
+        }
+        
+        .drag-text h3 {
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $white;
+            padding: 60px 0;
+            font-size: 22px;
+        }
+
+        .file-upload-input {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            opacity: 0;
+            cursor: pointer;
+            left: 0;
+        }
+
+        .file-upload-content {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 4px solid white;
+            padding: 4vw 3vw;
+        }
+
+        .uploadedImageLabel {
+            margin-bottom: 32px;
+            font-size: 32px;
+            color: white;
+        }
+
+        .uploadedImageName {
+            margin-right: 32px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .imageWrapper {
+            position: relative;
+            width: fit-content;
+            width: 53vh;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            transform: scale(1.5);
+        }
+
+        #removeImage {
+            background: white;
+            color: $primary-color;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 50px;
+            width: 23px;
+            height: 23px;
+            font-size: 18px;
+            line-height: 22px;
+            
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .button-container {
+        flex: 1;    
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .text {
+            color: $color-darker;
+            font-size: 24px;
+            width: 64%;
+            margin-top: 180px;
+            text-align: center;
+        }
+
+        .reset-icon {
+            font-size: 80px;
+        }
+
+        .main-button {
+            margin-top: 15%;
+            color: $white;
+            background: $primary-color;
+            padding: 50px;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 26px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            
+            &:hover {
+                transform:  scale(1.2);
+                transition: 0.3s;
+            }
+        }
+    }
+}

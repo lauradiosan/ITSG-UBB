@@ -1,0 +1,70 @@
+@import '../../shared/assets/variables.scss';
+
+.backArrow {
+  background-image: url("../../shared/assets/images/backArrow.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  transform: rotate(180deg);
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+  .imageName {
+    color: $primary-color;
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .imageFrame {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 60px;
+  }
+
+  .slider-container {
+    width: 50%;
+    min-width: 600px;
+  }
+
+  .archiveDownload {
+    color: $primary-color;
+    text-decoration: none;
+    border: 3px solid $primary-color;
+    padding: 12px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+
+::ng-deep .ngx-slider {
+  .ngx-slider-pointer {
+    background-color: $primary-color !important;
+  }
+
+  .ngx-slider-pointer.ngx-slider-active:after {
+    background-color: $body-color !important;
+  }
+
+  .ngx-slider-span:focus {
+    outline: none;
+  }
+}

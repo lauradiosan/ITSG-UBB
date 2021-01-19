@@ -1,0 +1,8 @@
+<div class="dashboard-container">
+    <nav-bar class="nav-bar"></nav-bar>
+    <div class="random-circle" [ngClass]="{big: showAnalysePage}"></div>
+    <div class="page-content">
+        <landing-page class="landing-page" [ngClass]="{hide: showAnalysePage, initiallyHidden: hideLandingPage}" (analyse)="analyse()"></landing-page>
+        <analysis-page class="analysis-page" [ngClass]="{show: (showAnalysePage && !hideLandingPage), initiallyDisplayed: hideLandingPage}"></analysis-page>
+    </div>
+</div>

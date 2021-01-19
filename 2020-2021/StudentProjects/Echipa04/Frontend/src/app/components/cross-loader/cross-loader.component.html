@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngIf="showText" id="loaderText">{{'Loading_Text' | transformText}}</div>
+  <div class="loader-container">
+    <div class="main-square" [ngClass]="{'primaryColorLoader': !whiteBackground}">
+      <div class="top-square"></div>
+      <div class="right-square"></div>
+      <div class="bottom-square"></div>
+      <div class="left-square"></div>
+    </div>
+  </div>
+</div>

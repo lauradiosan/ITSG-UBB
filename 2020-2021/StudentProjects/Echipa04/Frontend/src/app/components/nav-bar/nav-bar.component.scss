@@ -1,0 +1,107 @@
+@import '../../shared/assets/variables.scss';
+
+.nav-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    
+    .buttons-container {
+        display: flex;
+        padding: 50px 140px;
+        align-items: center;
+        z-index: 10;
+        
+        .register {
+            cursor: pointer;
+        }
+        
+        .login {
+            border: solid $primary-color 3px;
+            border-radius: 5px;
+            padding: 1px 12px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .userLoggedContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &:hover {
+                .userLoggedOverlay {
+                    height: 200px;
+                    transition: 0.5s;
+                    padding-top: 55px;
+                }
+    
+                ::ng-deep .userIcon path {
+                    transition: 0.2s;
+                    fill: #F6F5F7;
+                }
+            }   
+
+            ::ng-deep .userIcon path {
+                transition: 0.8s;
+                fill: #db0028;
+            }
+
+            .userLoggedOverlay {
+                position: absolute;
+                top: -20px;
+                height: 0;
+                overflow: hidden;
+                transition: 0.4s;
+                background-color: #db0028;
+                border-radius: 10px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .userLoggedEmail {
+                    color: #F6F5F7;
+                    white-space: nowrap;
+                    max-width: 180px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &.noHistoryBtn {
+                    padding-top: 0;
+
+                    .userLoggedEmail{
+                        margin-top: 60px;
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .historyBtn {
+                    margin-top: 24px;
+                    margin-bottom: 8px;
+                }
+
+                .overlayButton {
+                    padding: 8px 12px;
+                    color: #F6F5F7;
+                    border: 3px solid #F6F5F7;
+                    cursor: pointer;
+                    width: 80px;
+                    text-align: center;
+                }
+            }
+
+            .userIcon {
+                z-index: 1;
+                transition: 5s;
+
+                ::ng-deep svg {
+                    width: 40px;
+                    height: 40px; 
+                }
+            }
+        }
+    }
+}

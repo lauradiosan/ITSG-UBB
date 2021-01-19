@@ -1,0 +1,116 @@
+@import '../../shared/assets/variables.scss';
+
+.backArrow {
+    background-image: url("../../shared/assets/images/backArrow.png");
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    cursor: pointer;
+}
+  
+.nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 1.8;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .historyTitle {
+        color: $primary-color;
+        font-size: 36px;
+        padding-bottom: 60px;
+        margin-top: 180px;
+    }
+
+    .historyTable {
+        width: 800px;
+        font-family: $font-poppins;
+
+        .element-row td {
+            padding-top: $size-sm;
+            padding-right: $size-sm;
+            padding-bottom: $size-sm;
+            color: $primary-color;
+        }
+    
+        th {
+            font-size: $size-lg;
+            color: $white;
+            background: $primary-color;
+            padding-right: 24px;
+        }
+    
+        thead{
+            background: $primary-color !important;
+        }
+    
+        tr.mat-header-row {
+            background: $primary-color;
+        }
+    
+        tr.detail-row {
+            height: 0;
+        }
+    
+        .element-row td {
+            border-bottom-width: 0;
+        }
+    
+        td {
+            font-size: $font-size-sm;
+        }
+    
+        tr.element-row:not(.expanded-row):hover {
+        cursor: pointer;
+            background: $color-light;
+        }
+
+        .mat-header-cell {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .mat-cell {
+            text-align: center;
+            justify-content:center;
+            padding: 16px 24px 16px 0;
+            font-size: 20px;
+        }
+
+        .viewBtn {
+            color: $primary-color;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.placeholderNoHistory {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}

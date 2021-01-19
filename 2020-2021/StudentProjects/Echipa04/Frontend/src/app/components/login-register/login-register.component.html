@@ -1,0 +1,68 @@
+<div class="animated-gradient">
+    <div class="full-screen">
+        <div class="container">
+            <div class="card"></div>
+            <div class="card">
+            <h1 class="title">Login</h1>
+            <form [formGroup]="loginForm">
+                <div class="input-container">
+                    <input type="text" id="loginEmail" formControlName="email" required/>
+                    <label for="loginEmail">Email</label>
+                    <div class="bar"></div>
+                    <div class="loginValidation" *ngIf="loginFormSubmitted && loginControls.email.errors">
+                        {{(loginControls.email.errors.required ? "Email_Required" : "Email_Invalid") | transformText}}
+                    </div>
+                </div>
+                <div class="input-container" >
+                    <input type="password" id="loginPassword" formControlName="password" required/>
+                    <label for="loginPassword">Password</label>
+                    <div class="bar"></div>
+                    <div class="loginValidation" *ngIf="loginFormSubmitted && loginControls.password.errors">
+                        {{(loginControls.password.errors.required ? "Password_Required" : "Password_MinLength") | transformText}}
+                    </div>
+                </div>
+                <div class="button-container">
+                <button type="submit" (click)="submitLoginForm()"><span>Go</span></button>
+            </div>
+            </form>
+            </div>
+            <div class="card alt">
+            <div class="toggle" (click)="toggleRegisterPage(true)">
+                <div class="pencil"></div>
+            </div>
+            <h1 class="title">Register
+                <div class="close" (click)="toggleRegisterPage(false)"></div>
+            </h1>
+            <form [formGroup]="registerForm">
+                <div class="input-container">
+                    <input type="text" id="registerEmail" formControlName="email" required/>
+                    <label for="registerEmail">Email</label>
+                    <div class="bar"></div>
+                    <div class="registerValidation" *ngIf="registerFormSubmitted && registerControls.email.errors">
+                        {{(registerControls.email.errors.required ? "Email_Required" : "Email_Invalid") | transformText}}
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="registerPassword" formControlName="password" required/>
+                    <label for="registerPassword">Password</label>
+                    <div class="bar"></div>
+                    <div class="registerValidation" *ngIf="registerFormSubmitted && registerControls.password.errors">
+                        {{(registerControls.password.errors.required ? "Password_Required" : "Password_MinLength") | transformText}}
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="registerConfirmPassword" formControlName="repeatPassword" required/>
+                    <label for="registerConfirmPassword">Repeat Password</label>
+                    <div class="bar"></div>
+                    <div class="registerValidation" *ngIf="registerFormSubmitted && registerControls.repeatPassword.errors">
+                        {{(registerControls.repeatPassword.errors.required ? "Password_Required" : "Password_NotMatch") | transformText}}
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" (click)="submitRegisterForm()"><span>Next</span></button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

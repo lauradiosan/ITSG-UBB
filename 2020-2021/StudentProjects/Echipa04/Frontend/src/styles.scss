@@ -1,0 +1,67 @@
+@import "./app/shared/assets/variables.scss";
+@import '~ngx-toastr/toastr';
+
+html, body { 
+    height: 100%;
+    background-color: $body-color;
+    -webkit-user-select: none;    
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    box-sizing: border-box;
+    min-width: 320px;
+}
+
+body { 
+    margin: 0; 
+    font-family: $font-poppins; 
+}
+
+::-webkit-scrollbar {
+    background-color: $body-color;
+    width: $size-s;
+    height: $size-s;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    opacity: 0.2;
+    background-color: rgba(219, 0, 40, 0.8);
+    border-right: solid 2.5px $body-color;
+    border-left: solid 2.5px $body-color;
+
+    &:hover {
+        background-color: rgba(219, 0, 40,1);
+    }
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: white;
+}
+
+.custom-select {
+
+    margin-bottom: 15px;
+    .mat-form-field-infix {
+        background: $white;
+        padding: $size-xxs $size-xs;
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .mat-form-field-underline {
+        display: none;
+    }
+
+    .mat-select-arrow {
+        color: $primary-color;
+    }
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: $primary-color;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color:$primary-color;
+}

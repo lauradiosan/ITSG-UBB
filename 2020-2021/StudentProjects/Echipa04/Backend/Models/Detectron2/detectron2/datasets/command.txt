@@ -1,0 +1,5 @@
+python demo/demo.py ^
+	--config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml ^
+	--input datasets/photo.jpg ^
+	--output output.jpg ^
+	--opts MODEL.WEIGHTS detectron2://COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x/137260431/model_final_a54504.pkl

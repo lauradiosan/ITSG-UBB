@@ -1,0 +1,30 @@
+<div *ngIf="!isLoading" class="backArrow" (click)="returnToPreviousPage()"></div>
+<nav-bar *ngIf="!isLoading" [hideHistoryBtn]="true" class="nav-bar"></nav-bar>
+<cross-loader [showText]="false" [whiteBackground]="false" *ngIf="isLoading" class="loader"></cross-loader>
+<div *ngIf="!isLoading && historyRecords && historyRecords.length" class="history-container">
+    <div class="historyTitle">{{'Analysis_History' | transformText}}</div>
+    <table mat-table [dataSource]="historyRecords" class="historyTable mat-elevation-z8">
+        <ng-container matColumnDef="index">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element; let idx = index;">{{idx+1}}</td>
+        </ng-container>
+        <ng-container matColumnDef="imageName">
+          <th mat-header-cell *matHeaderCellDef> Image Name </th>
+          <td mat-cell *matCellDef="let element">{{element.imageName}}</td>
+        </ng-container>
+        <ng-container matColumnDef="imageDate">
+          <th mat-header-cell *matHeaderCellDef> Image Date </th>
+          <td mat-cell *matCellDef="let element">{{element.imageDate}}</td>
+        </ng-container>
+        <ng-container matColumnDef="viewResultBtn">
+          <th mat-header-cell *matHeaderCellDef> Symbol </th>
+          <td mat-cell *matCellDef="let element"> 
+              <div class="viewBtn" (click)="viewResult(element.recordID, element.imageName)">View Result</div> 
+          </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
+<div *ngIf="!isLoading && (!historyRecords || !historyRecords.length)" class="placeholderNoHistory">{{(isError ? "Error_History" : "No_History") | transformText}}</div>

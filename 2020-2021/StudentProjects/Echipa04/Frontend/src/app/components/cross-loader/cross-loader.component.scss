@@ -1,0 +1,138 @@
+@import "../../shared/assets/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #loaderText {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .loader-container {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotateSquare 3s infinite ease;
+    animation-delay: 2s;
+
+    .main-square {
+      width: 30px;
+      height: 30px;
+      background-color: $white;
+
+      div {
+        width: 30px;
+        height: 30px;
+        background-color: $white;
+        position: absolute;
+      }
+
+      &.primaryColorLoader {
+        background-color: $primary-color;
+
+        div {
+          background-color: $primary-color;
+        }
+      }
+
+      .top-square {
+        animation: goTop 6s infinite ease;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .right-square {
+        animation: goRight 6s infinite ease;
+        animation-delay: 0.5s;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .bottom-square {
+        animation: goBottom 6s infinite ease;
+        animation-delay: 1s;
+        border-radius: 0 0 5px 5px;
+      }
+
+      .left-square {
+        animation: goLeft 6s infinite ease;
+        animation-delay: 1.5s;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
+}
+
+@keyframes goTop {
+  0% {
+    top: 30px;
+  }
+  10%,
+  50% {
+    top: 1px;
+  }
+  60%,
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes goRight {
+  0% {
+    right: 30px;
+  }
+  10%,
+  50% {
+    right: 1px;
+  }
+  60%,
+  100% {
+    right: 30px;
+  }
+}
+
+@keyframes goBottom {
+  0% {
+    bottom: 30px;
+  }
+  10%,
+  50% {
+    bottom: 1px;
+  }
+  60%,
+  100% {
+    bottom: 30px;
+  }
+}
+
+@keyframes goLeft {
+  0% {
+    left: 30px;
+  }
+  10%,
+  50% {
+    left: 1px;
+  }
+  60%,
+  100% {
+    left: 30px;
+  }
+}
+
+@keyframes rotateSquare {
+  40%,
+  100% {
+    transform: rotate(360deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+}

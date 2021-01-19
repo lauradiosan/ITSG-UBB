@@ -1,0 +1,66 @@
+/* Fonts */
+@font-face {
+    font-family: 'Cera Pro Regular';
+    src: url('/assets/CeraPro-Regular.eot');
+    src: url('/assets/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/CeraPro-Regular.woff') format('woff'),
+    url('/assets/CeraPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-kalam: "Kalam", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-cerapro: "Cera Pro Regular";
+
+/* Colors */
+$white: #ffffff;
+$body-color: #F6F5F7;
+$black: #000000;
+$placeholder-color: #2e1e0a;
+$primary-color: #db0028;
+$color-light:#f0ebeb;
+$color-dark: #9e9893;
+$color-darker:#817d79;
+
+/* Margins */
+$margin-xxs: 2px;
+$margin-xs: 4px;
+$margin-sm: 8px;
+$margin-md: 12px;
+$margin-lg: 16px;
+$margin-xl: 20px;
+$margin-xxl: 24px;
+$margin-xxxl: 28px;
+$margin-xxxxl: 32px;
+$margin-xxxxxl: 40px;
+
+/* Font sizes */
+$font-size-xxs: 8px;
+$font-size-xs: 12px;
+$font-size-sm: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 28px;
+$font-size-xxxxl: 32px;
+$font-size-xxxxxl: 40px;
+
+/* Resolution */
+$desktop-min-width: 1201px;
+$tablet-max-width: 1200px;
+$tablet-min-width: 481px;
+$mobile-max-width: 480px;
+
+/* Sizes */
+$size-xxxs: 4px;
+$size-xxs: 8px;
+$size-xs: 12px;
+$size-s: 14px;
+$size-sm: 16px;
+$size-lg: 18px;
+$size-xl: 20px;
+$size-xxl: 24px;
+$size-xxxl: 28px;
+$size-xxxxl: 32px;
+$size-xxxxxl: 40px;

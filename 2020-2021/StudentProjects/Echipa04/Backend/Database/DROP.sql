@@ -1,0 +1,24 @@
+GO
+DROP TABLE IF EXISTS [HistoryRecords]
+
+GO
+
+
+DROP TABLE IF EXISTS [Images]
+
+GO
+DROP TABLE IF EXISTS [ImageTypes]
+
+GO
+
+DROP TABLE IF EXISTS [Users]
+
+GO
+
+
+
+
+
+
+
+

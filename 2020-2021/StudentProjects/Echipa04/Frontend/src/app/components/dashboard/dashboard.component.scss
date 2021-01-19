@@ -1,0 +1,98 @@
+@import '../../shared/assets/variables.scss';
+
+.dashboard-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .nav-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .random-circle {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: absolute;
+        left: calc(100vw / 2);
+        bottom: calc(100vh / 2.5);
+        animation: infinite breathe 3s ease-in-out;
+
+        &.big {
+            height: 80vh;
+            width: 80vh;
+            left: 50px;
+            bottom: 10%;
+            animation: none;
+            transition: 3s;
+        }
+    }
+
+    .page-content {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .landing-page {
+            width: 100%;
+            &.hide {
+                position: absolute;
+                animation: forwards hide 2s linear;
+            }
+        }
+
+        .analysis-page {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 50px;
+            right: 0;
+            transform: translateY(500%);
+            opacity: 0;
+            
+            &.show {
+                animation-delay: 2s;
+                animation: forwards show 4s ease-in-out;
+            }
+
+            &.initiallyDisplayed {
+                animation: forwards show 1.2s ease-out;
+            }
+        }
+    }
+}
+
+.initiallyHidden {
+    display: none;
+}
+
+@keyframes hide {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(500%);
+        position: relative;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        position: relative;
+        opacity: 1;
+    }
+}

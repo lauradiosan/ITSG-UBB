@@ -1,0 +1,13 @@
+<div class="nav-bar-container">
+    <div class="buttons-container">
+        <div *ngIf="!loggedInUser" class="login" (click)="redirectToLogin()">{{'Navbar_Login' | transformText}}</div>
+        <div *ngIf="loggedInUser" class="userLoggedContainer">
+            <div class="userIcon" [innerHtml]="'User_Icon' | transformIcon"></div>
+            <div class="userLoggedOverlay" [ngClass]="{'noHistoryBtn':hideHistoryBtn}">
+                <div class="userLoggedEmail">{{loggedInUser.email}}</div>
+                <div *ngIf="!hideHistoryBtn" class="overlayButton historyBtn" (click)="redirectToHistory()">{{'History' | transformText}}</div>
+                <div class="overlayButton" (click)="signOut()">{{'SignOut' | transformText}}</div>
+            </div>
+        </div>
+    </div>
+</div>

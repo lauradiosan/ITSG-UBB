@@ -1,0 +1,24 @@
+<div class="analyse-container">
+    <div class="upload-container">
+        <div class="image-upload-wrap" *ngIf="!uploadedImage">
+            <input (change)="uploadImage($event)" class="file-upload-input" id="inputImageId" type="file" accept=".nrrd"/>
+            <div class="drag-text">
+              <h3>{{'Upload_Image' | transformText}}</h3>
+            </div>
+        </div>
+        <div *ngIf="uploadedImage && !isLoading" class="file-upload-content">
+          <div class="uploadedImageLabel">{{ 'UploadedImage_Text' | transformText }}</div>
+          <div class="imageWrapper">
+            <div class="uploadedImageName">{{imageName}}</div>
+            <div id="removeImage" (click)="removeImage()">x</div>
+          </div>
+        </div>
+        <cross-loader *ngIf="isLoading" class="loader"></cross-loader>
+    </div>
+    <div class=button-container>
+        <div class="text" [innerHtml]="(isUserLoggedIn ? 'Analyse_Text' : 'Analyse_Text_NotLoggedIn') | transformText"></div>
+        <div class="main-button" (click)="analyseImage()">
+            {{'Analyse_Button' | transformText}}
+        </div>
+    </div>
+</div>
