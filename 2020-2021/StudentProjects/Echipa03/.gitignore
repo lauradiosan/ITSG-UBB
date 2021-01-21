@@ -1,0 +1,22 @@
+# common
+venv/
+.idea/
+build/
+.env/
+
+
+# server
+__pycache__/
+server/images
+
+
+#client
+client/node_modules
+client/.pnp
+client/.pnp.js
+client/coverage
+client/.DS_Store
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/itsg_client.code-workspace

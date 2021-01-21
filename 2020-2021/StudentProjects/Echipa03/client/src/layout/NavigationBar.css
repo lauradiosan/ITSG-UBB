@@ -1,0 +1,33 @@
+.Navigation-bar {
+    background-color: #282c34;
+    height: 5vmin;
+    align-items: center;
+    justify-content: left;
+    vertical-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.NavItem {
+    float: left;
+    cursor: pointer;
+}
+
+.App-logo {
+    height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
