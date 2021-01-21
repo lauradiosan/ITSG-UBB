@@ -1,0 +1,357 @@
+%latex model.tex
+%bibtex model
+%latex model.tex
+%latex model.tex
+%pdflatex model.tex
+
+%se poate lucra si online (de ex www.overleaf.com)
+
+
+\documentclass[runningheads,a4paper,11pt]{report}
+
+\usepackage{algorithmic}
+\usepackage{algorithm} 
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{comment} 
+\usepackage{epsfig} 
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref} 
+\usepackage[latin1]{inputenc}
+\usepackage{multicol}
+\usepackage{multirow} 
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage[acronym,nomain]{glossaries}
+
+\geometry{a4paper,top=3cm,left=2cm,right=2cm,bottom=3cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Emotion Kids}
+\fancyhead[RE,LO]{Doamne ajuta}
+\fancyfoot[RE,LO]{ITSG 2020-2021}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{lime}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{lime}\leaders\hrule height \footrulewidth\hfill}}
+
+\hypersetup{
+pdftitle={artTitle},
+pdfauthor={name},
+pdfkeywords={pdf, latex, tex, ps2pdf, dvipdfm, pdflatex},
+bookmarksnumbered,
+pdfstartview={FitH},
+urlcolor=cyan,
+colorlinks=true,
+linkcolor=red,
+citecolor=green,
+}
+% \pagestyle{plain}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\linespread{1}
+
+% \pagestyle{myheadings}
+
+\makeindex
+\makeglossaries
+
+\begin{document}
+
+\begin{titlepage}
+\sloppy
+
+\begin{center}
+BABE\c S BOLYAI UNIVERSITY, CLUJ NAPOCA, ROM\^ ANIA
+
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
+
+\vspace{6cm}
+
+\Huge \textbf{Emotion detection in preschoolers' behaviour}
+
+\vspace{1cm}
+
+\normalsize -- ITSG report --
+
+\end{center}
+
+
+\vspace{5cm}
+
+\begin{flushright}
+\Large{\textbf{Team members}}\\
+\textbf{Dragos-Alexandru Grigore}, dragos.grigore@mail.com \\
+\textbf{Ana-Corina Todoran}, todorananacorina13@gmail.com \\
+\textbf{Radu-George Vele}, georgevele2016@gmail.com \\
+\\
+\textbf{Software Engineering, 258}
+\end{flushright}
+
+\vspace{2cm}
+
+\begin{center}
+2020-2021
+\end{center}
+
+\end{titlepage}
+
+\pagenumbering{gobble}
+
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+\newacronym{il-cnn}{IL-CNN}{Island Loss-Convolutional Neural Network}
+\newacronym{lfw}{LFW}{Labeled Faces in the Wild}
+\newacronym{fer}{FER}{Facial Expression Recognition}
+\newacronym{iarpa}{IARPA}{Intelligence Advanced Research Projects Activity}
+\newacronym{api}{API}{Application Programming Interface}
+
+\begin{abstract}
+
+The purpose of this project is to present a new application of emotional recognition, being used for children, by applying a filter to the video they are watching based on their face expression. This is different from other projects by the fact that it is specifically created for children. We are using artificial intelligence in order to find a child's reaction to different visual actions (showed by sample videos).
+
+In this project, we are using an intelligent algorithm - Convolutional Neuronal Network such that we can identify the different children expressions. The training and evaluation has been done using Fer2013 dataset, which is comprised of 28.709 training and 3589 testing images.
+
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\listoftables
+\listoffigures
+
+\newpage
+
+\setstretch{1.5}
+
+
+
+\newpage
+
+\pagenumbering{arabic}
+
+
+ 
+
+
+\chapter{Introduction}
+\label{chapter:introduction}
+
+\section{What? Why? How?}
+\label{section:what}
+
+\subsection{What?}
+\label{subsection:what}
+\paragraph{}
+We are addressing the problem of boredom and sadness that comes at kindergarten children when using the computer. This problem usually occurs because children usually get bored very fast when doing any kind of action.
+
+\subsection{Why?}
+\label{subsection:what}
+\paragraph{}
+
+The emotion of a kid has a big impact on his interaction with other people and it also affects his or her childhood, therefore this issue must be fixed as soon as possible.
+
+\subsection{How?}
+\label{subsection:what}
+\paragraph{}
+
+Our basic approach in order to solve this issue is to create an application that is worthy enough for children's attention such that we can capture the transition of their emotions and show them this transition in real time. This will be done by applying filters to the video they are choosing to watch, based on their face.
+
+
+\section{Paper structure and original contribution(s)}
+\label{section:structure}
+
+This paper contains bibliographical references is structured in 6 chapters that are describing the experimental study we have done in this semester on the problem of recognizing the face expressions of children. The research presented in this paper advances the theory, design, and implementation of several particular models. 
+
+The main contribution of this report is to present an intelligent algorithm for solving the problem of identifying the face expression of several children.
+
+The second contribution of this report consists of building an intuitive, easy-to-use and user
+friendly software application.
+
+The first chapter is a short introduction to the idea of this paper, while it also discusses the reasoning behind the paper.
+
+The second chapter describes the scientific problem.
+
+The third chapter presents the state of the art and the related work to the paper that we have written.
+
+The fourth chapter aims to present the investigated approach by our team and the studies we have done.
+
+The fifth chapter presents the application, the numerical results, together with the methodology used.
+
+The sixth chapter aims to present a conclusion of this paper, while also presenting the future work to be done.
+
+
+
+\chapter{Scientific Problem}
+\label{section:scientificProblem}
+
+
+\section{Problem definition}
+\label{section:problemDefinition}
+The problem is the accurate detection and interpretation of emotion in kindergarten kids. It needs to be solved with an intelligent algorithm because we do not know how to define emotions programmatically.
+
+The advantage of solving it with a neural network classifier is that the algorithm is adaptable, based on our data set, and it can figure on its own what it actually means for a kid to be happy, sad, surprised or any other emotion.
+
+
+The inputs will be images of kids, and the output will be their emotion. Based on this, we will make a streaming service that will apply different filters on the videos based on the detected emotions. One of the challenges in doing this could be the different structure of the face for a child in comparison to an adult.
+
+
+\chapter{State of the art/Related work}
+\label{chapter:stateOfArt}
+
+
+In the following, a few of the related work in the field of facial emotion recognition are going to be presented. Also, a section is dedicated to the useful tools in this domain.
+
+\section{State of art}
+\begin{enumerate}
+    \item In a research paper \cite{swami2017}, an approach that combines the \gls{cnn} approach with a low-dimensional discriminative embedding step that is learned by using triplet probability constraints in order to address the unconstrained face verification problems. The challenges have been done on the \gls{iarpa} Janus Benchmark A and labeled faces in the wild databases. The superior performance of this approach are reflected by the robustness of the representation learned by the deep \gls{cnn}.
+    
+    
+    \item In another research paper \cite{caimeng2018}, the usage of convolutional neural networks on facial recognition was thought to be a good approach, but when they managed to test it on real world data, a lot of issues appeared, mostly caused by light, variations of the head position, very subtle changes in the facial appearance. However, the studies conducted on four benchmark expression databases (Extended Cohn-Kanade, Oulu-CASIA database, MMI database and Static Facial Expressions in the Wild) have proved that island loss \gls{cnn} (\gls{il-cnn}) outperforms the regular \gls{cnn}, based on the increased inter-class distances and the reduced intra-class variations. However, in this case, none of the databases contained kindergarten children benchmark expressions.
+    
+\end{enumerate}
+
+
+
+Again, while also true for the second research paper, the conducted tests were not done on kindergarten children.
+
+
+\section{Useful tools}
+\begin{itemize}
+    \item Face-recognition - a Python library that is used in order to recognize and manipulate faces. It can be used from the command line or directly from Python. It is build using dlib's state-of-the-art face recognition and it has a 99.38\% on the \gls{lfw} benchmark.
+    
+    \item Keras - an open-source library that provides a Python interface for artificial neural networks. It contains numerous implementations of layers, objectives, activation functions, optimizers and a host of tools to make working with image and text data easier to simplify the coding necessary for writing deep neural network code.
+    
+    \item OpenCV (Open Source Computer Vision Library) - is a library of programming functions mainly aimed at real-time computer vision.The library is cross-platform and free for use.
+    
+    \item Luxand - tool for recognizing and detecting the facial features within our application. It is used to monitor emotions that are associated with visual content (videos or images.)
+\end{itemize}
+
+\chapter{Investigated approach}
+\label{chapter:proposedApproach}
+
+\textbf{Convolutional Neural Network (abbreviated \gls{cnn})} is one deep neural network that is usually used for analyzing visual imagery \cite{valueva2020}. They are regularized versions of multilayer perceptrons, which are fully connected networks (each neuron from a specifc layer is connected to the neurons in the next layer). \gls{CNN} takes advantage of a hierarchial pattern in data and assemble more complex patterns using smaller and simpler patterns, that means on a connectedness and complexity scale, they are on the lower extreme.
+
+Our approach was to create an application that lets kids interact with elements with their emotion, and in the process of building this application, we compared 2 models based on the Face Emotion Recognition (Fer2013) dataset, and one provided to us by an exernal \gls{api}.
+
+Our application consists of a login based on the face of the user, which is done by using the face\_recognition library. Once a user is logged in, he can see 2 screens: one showing his face (by using the PC camera) and one where a video will be played. Below this, 6 video options are presented. Once a video is selected, the video will play and the filter will be applied based on the user's face expression. You can see the expressions and corresponding filters in figure 4.1.
+
+\begin{center}
+    \includegraphics[width=10cm]{Fig/emo.png}
+    \captionof{figure}{Emotion based filters}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=17cm]{cnn.png}
+    \captionof{table}{Model layers}
+\end{center}
+
+\chapter{Application}
+\label{chapter:application}
+
+In our project we have compared 3 models for detecting human emotions, and one for recognizing peoples faces.
+
+The first model we have tested was generated with a 6 layered Convolutional Neural Network in Keras, trained on 48x48px grayscale images preprocessed from \gls{fer}.
+
+The second model was generated with a 17 layered Convolutional Neural Network also in Keras, on 48x48px images. This was trained both with 30 epochs and 100 epochs, the better one being the one trained with 30.
+
+The third one is a model provided as a service by an external \gls{api} called Luxand. It is a paid service, but has a free trial up to 10,000 emotion detections.
+
+\vspace{10mm}
+The application consists of the following functionalities:
+
+\begin{itemize}
+    \item Login - by using the camera of the device
+    \item Select a video to play
+    \item Apply filter based on actual face expression
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width=17cm]{login.png}
+    \captionof{figure}{Login screen}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=17cm]{dashboard.png}
+    \captionof{figure}{Application dashboard}
+\end{center}
+
+\vspace{10mm}
+
+\section{Methodology}
+\label{section:methodology}
+
+\begin{itemize}
+	\item What are criteria you are using to evaluate your method? 
+	\subitem - Accuracy and Speed. In our use case, we would like to get emotions as accurately as possible, as fast as possible.
+	
+	\item What specific hypotheses does your experiment test? Describe the experimental methodology that you used. 
+    \subitem - We hypothesise that interaction with software using facial expressions is feasible. We have created an application that uses those exact expressions to apply filters on videos.
+    
+	\item What are the dependent and independent variables? 
+	
+	\subitem - Categorical Cross Entropy loss
+	\subitem - Adam optimizer
+	
+	\item What is the training/test data that was used, and why is it realistic or interesting? Exactly what performance data did you collect and how are you presenting and analyzing it? Comparisons to competing methods that address the same problem are particularly useful.
+	\subitem -  We used Facial Emotion Recognition (\gls{fer}) 2013. Unfortunately it does not contain children. With the model we trained, on 30 epochs we got an accuracy of 85.26\% (training) and 57.73\% (validation) and on 100 epochs we got 84.42\% (training) and 56.23\% (validation). 
+\end{itemize}
+
+\section{Data}
+\label{section:data}
+
+The data that is used for training and evaluation is from the Fer2013 dataset. The compressed dataset contains 92MB of compressed pictures. There are 28.709 training and 3589 testing images in the dataset. Each of the images were stored in 48x48 pixels. Unfortunately, the dataset does not contain any children images.
+
+\section{Results}
+\label{section:results}
+
+\begin{itemize}
+    \item On 30 epochs we got an accuracy of 85.26\% (training) and 57.73\% (validation)
+    \item On 100 epochs we got 84.42\% (training) and 56.23\% (validation)
+    \item The 6 layered pre-trained model we have used only outputted surprise and fear, regardless of the actual emotion of the user.
+    \item The Luxand \gls{api} has yielded the best and consistent results, and that is the one we have chosen to integrate into our application ( we also have endpoints for our trained one, but this one is primarily used)
+\end{itemize}
+ 
+\section{Discussion}
+\label{section:discussion}
+
+\begin{itemize}
+	\item Is your hypothesis supported? 
+	\subitem -Yes, we can create an interactive application based on emotions,and it can be quite consistent.
+	\item What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? 
+	\subitem -Our method is certainly not the best, but I believe there is a lot of potential for improvement, by upgrading the dataset and the prepossessing made
+\end{itemize}
+
+
+
+\chapter{Conclusion and future work}
+\label{chapter:concl}
+
+The problem of recognizing the face expressions of children is still a problem nowadays. Even though a lot of progress has been made in this field, by seeing the adoption of face recognition by bigger commercial applications, there still remain some aspects that are yet to be improved. The final accuracy tends to be around 60\% which is more than half. This gives us a sign of progress in the field and a considerable step ahead, because children faces have a lack of structure in comparison with adults. 
+
+Next step for the application would be a selection of the video based on where the child is looking, as well as trying a new face recognition algorithm.
+
+\printglossaries
+
+\bibliographystyle{plain}
+\bibliography{BibAll}
+
+\end{document}
