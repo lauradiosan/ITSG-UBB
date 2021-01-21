@@ -1,0 +1,31 @@
+<div class="toolbar">
+  <img src="../../assets/images/dasboard_top.png" alt="image" class="image">
+</div>
+
+<div class="dashboard body">
+  <div class="row">
+    <div class="col-4 text-center">
+      <img src="../../assets/images/happy.png" alt="image" class="emotion-image">
+    </div>
+    <div class="col-4 text-center">
+      <img [src]="profilePictureUrl" alt="image" class="kid-image">
+    </div>
+    <div class="col-4 text-center">
+      <img src="../../assets/images/sad.png" alt="image" class="emotion-image">
+    </div>
+  </div>
+
+  <div class="videoWrapper">
+    <video #vid width="400" height="200" autoplay></video>/
+    <video #vid2 [ngClass]="videoClass" [src]="currentVideo" type="video/mp4" width="400" height="200" autoplay></video>/
+  </div>
+
+  <div class="row games">
+    <div *ngFor="let video of videos" (click)="changeVideo(video)" class="col-4 text-center">
+      <img src="../../assets/images/thumbnails/{{video.thumbnail}}" alt="image" class="game-image">
+      <div class="color_grid orange"></div>
+    </div>
+  </div>
+
+<!--  <button (click)="detectEmotion()">capture</button>-->
+</div>
