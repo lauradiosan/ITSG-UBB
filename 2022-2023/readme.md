@@ -3,7 +3,9 @@
 ## Cursuri
 
 Sapt 1: Deschiderea anului universitar :)
+
 Sapt 2: [Introducere](Lectures/01_ML_review.ppt)
+
 Sapt 3: ML [review1](Examples/MLalgorithms.ipynb) [review2](Examples/MLopenCourse.ipynb)
 <!-- 
 Sapt 4: [AI for problem solving](Lectures/02_optim.ppt) and [ML for Computer Vision - part 1](Lectures/03_CV_ML_part1.ppt)
