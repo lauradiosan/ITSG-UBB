@@ -1,4 +1,4 @@
-# ITSG-2022-2023
+# ITSG-2023-2024
 
 ## Cursuri
 
@@ -70,7 +70,7 @@ Proiectul implică:
 
 
 **Dezvoltarea aplicatiei**
-In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici](https://classroom.github.com/a/cIgEtS95).
+In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici](https://classroom.github.com/a/qRLDYEtS).
 [Good tips](https://www.deeplearningbook.org/)
 
 **Raportul tehnic**
