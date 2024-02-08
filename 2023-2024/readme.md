@@ -1,6 +1,6 @@
 # ITSG-2023-2024
 
-## Proiecte editiei 2023-2024 [link](https://www.youtube.com/playlist?list=PLWqoeian8g3bcPh9uIVDiVyGbks0OjY8a)
+## Proiectele editiei 2023-2024 [link](https://www.youtube.com/playlist?list=PLWqoeian8g3bcPh9uIVDiVyGbks0OjY8a)
 
 ## Cursuri
 
