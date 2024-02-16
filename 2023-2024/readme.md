@@ -1,5 +1,7 @@
 # ITSG-2023-2024
 
+## Proiectele editiei 2023-2024 [link](https://www.youtube.com/playlist?list=PLWqoeian8g3bcPh9uIVDiVyGbks0OjY8a)
+
 ## Cursuri
 
 Sapt 1: Deschiderea anului universitar :)
