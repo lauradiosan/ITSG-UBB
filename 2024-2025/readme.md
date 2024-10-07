@@ -67,7 +67,7 @@ Proiectul implică:
 - rezolvarea unei probleme cu ajutorul unei tehnici de AI din cele enumerate mai sus şi analiza rezultatelor obţinute (analiza numerica si cu ajutorul unui model de Explainable AI).
 - dezvoltarea aplicatiei (care integreaza algoritmii inteligenti)
 - redactarea documentatiei (raportului)
-- realizarea unei postari pe [blog](Medium)
+- realizarea unei postari pe un blog tehnici (e.g. Medium)
 - prezentarea proiectului
 
 
@@ -91,43 +91,6 @@ Scrierea unei postari pe blog este usoara si intuitiva (a se vedea recomandarile
     - incorporare feedback in postare
 
 
-    First, please read this article [link](https://www.google.com/url?q=https://towardsdatascience.com/questions-96667b06af5&sa=D&source=editors&ust=1727864471183094&usg=AOvVaw2gWVLXH3STS3Yv1KmA7r-7) carefully to learn about how to write machine learning blog posts. For this course project, please also follow the instructions below.
-
-
-In the blog posts, you should include the following:
-
-- At the beginning of your blog post, include “By XXX, YYY, ZZZ as part of the Stanford CS224W course project.”, where XXX, YYY, ZZZ are the names of the team members.
-- Wherever applicable:
-    - The domain(s) that you are applying graph ML to.
-    - Dataset descriptions (source, pre-processing etc).
-    - Results that you obtain using the model on the dataset
-- Paper references as [1], [2], etc., see this blog post as an example [link](https://www.google.com/url?q=https://towardsdatascience.com/geometric-foundations-of-deep-learning-94cdd45b451d&sa=D&source=editors&ust=1727864471183983&usg=AOvVaw0TFbr6e5F15Kl2-Ho4wmZL).
-- Step-by-step explanation of graph ML techniques you are using
-    - You can assume the following for the readers.
-        - Readers are familiar with machine learning (e.g., CS229) and deep learning (e.g., ​​CS230) concepts. You do not need to explain them in detail.
-        - Readers are familiar with PyTorch.
-        - Readers are not familiar with graph ML.
-    - Some code snippets of how you used PyG/PyTorch to implement the techniques
-- Visualizations that would make the blog posts intriguing to read.
-    - Gifs > Images > Text to show your methods and results.
-    - Try to use videos, images, flow charts as much as possible.
-    - The more visualization, the better. Reading text-occupied blogs is often painful.
-    - Provide image credits if you are adopting figures from other places (we encourage you to make your own figures).
-- Link to your Google Colab that can be used to reproduce your results.
-- Avoid criticizing research / research orgs. You are here to showcase your work, not to write opinion pieces.
-
-A good blog post should
-- be fun to read with many figures and visualizations.
-- be easy to follow even for graph ML novice.
-- clearly convey the potential of graph ML.
-- contain a good amount of PyG code snippets, with explanations, to understand how PyG is used in the project.
-- be around 10 minutes to read (although this is not a hard constraint).
-
-Examples of good blog posts:
-- http://peterbloem.nl/blog/transformers 
-- https://tkipf.github.io/graph-convolutional-networks/
-- https://towardsdatascience.com/graph-neural-networks-as-neural-diffusion-pdes-8571b8c0c774
-- https://blog.twitter.com/engineering/en_us/topics/insights/2021/temporal-graph-networks
 
 
 **Prezentarea finala**
