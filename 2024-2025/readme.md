@@ -72,7 +72,7 @@ Proiectul implică:
 
 
 **Dezvoltarea aplicatiei**
-In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici](https://classroom.github.com/a/qRLDYEtS).
+In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici](https://classroom.github.com/a/U5HXguOw).
 [Good tips](https://www.deeplearningbook.org/)
 
 **Raportul tehnic**
