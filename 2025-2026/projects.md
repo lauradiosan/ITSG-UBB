@@ -34,7 +34,7 @@ Informatii utile:
 
 ## Project 2
 <details>
-    <summary> Predictive Mental Health Monitoring System  (Owner: Cristiana Bogateanu si Vlad Neste) <img style="vertical-align:middle" src="images\mentalHealth.jpeg" alt="networks" width="100"/></summary>
+    <summary> Predictive Mental Health Monitoring System  (Owner: Cristiana Bogateanu, cristiana.bogateanu@nagarro.com) <img style="vertical-align:middle" src="images\mentalHealth.jpeg" alt="networks" width="100"/></summary>
 
 ### Scop
 Mental Health - To empower individuals and healthcare providers by offering a predictive mental health monitoring system that proactively identifies and mitigates the risk of suicidal actions through the continuous and intelligent analysis of health data collected from wearable devices.  
@@ -62,9 +62,9 @@ The Predictive Mental Health Monitoring System is a cutting-edge solution design
 
 </details>
 
-## Project 2
+## Project 3
 <details>
-    <summary> Support in the drug development (Owner: Cristiana Bogateanu si Vlad Neste) <img  style="vertical-align:middle" src="images\drugs.jpeg" alt="networks" width="100"/></summary>
+    <summary> Support in the drug development (Owner: Cristiana Bogateanu, cristiana.bogateanu@nagarro.com) <img  style="vertical-align:middle" src="images\drugs.jpeg" alt="networks" width="100"/></summary>
 
 ### Scop
 Predict the Actions of Substances on the Human Body - To develop a high-fidelity system capable of accurately predicting the actions and reactions of substances within the human body, starting with their interactions with proteins, ultimately advancing drug discovery and personalized medicine. 
@@ -91,9 +91,9 @@ The Predict the Actions of Substances system aims to use computational biology a
 
 </details>
 
-## Project 3
+## Project 4
 <details>
-    <summary> <img  style="vertical-align:middle" src="images\elderly.jpeg" alt="networks" width="100"/> Elderly People Caring Platform (Owner: Cristiana Bogateanu si Vlad Neste)  </summary>
+    <summary> <img  style="vertical-align:middle" src="images\elderly.jpeg" alt="networks" width="100"/> Elderly People Caring Platform (Owner: Cristiana Bogateanu, cristiana.bogateanu@nagarro.com)  </summary>
 
 ### Scop
 Elderly People Support - To provide a comprehensive and user-friendly platform that integrates data from various health conditions affecting the elderly, offering personalized recommendations, health status insights, and gamified elements to encourage healthy behaviors and proactive care. 
@@ -117,3 +117,45 @@ The Elderly People Caring Platform is designed to support the aging population b
 
 </details>
 
+
+## Project 5
+<details>
+    <summary> Emotion recognition in economical behaviours </summary>
+
+### Scop
+
+Development of an intelligent system that allows the identification of emotions in the communications of official persons based on the written text associated with the communication, the vocal message associated with the communication, or the facial expressions of the person delivering the communication. 
+
+### Ideea de baza
+It is planned to develop a system with 3 components:
+- a component that analyzes emotions in written text
+- a component that analyzes emotions in the vocal message
+- a component that analyzes emotions in the facial expressions of the person delivering the communication.
+
+In the end, the three components will be merged.
+
+### TODOlist
+1. Problem definition (details about inputs and outputs)
+2. Exploratory data analysis
+3. AI development and performance evaluation 
+4. Improvements
+
+### Data
+
+MELD dataset [link](https://affective-meld.github.io/)
+Emory [link](https://github.com/emorynlp/character-mining)
+FER [link](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
+AffWild [link](https://ibug.doc.ic.ac.uk/resources/aff-wild2/)
+
+
+### Bibliografy
+
+Curti, F., & Kazinnik, S. (2023). Let's face it: Quantifying the impact of nonverbal communication in FOMC press conferences. Journal of Monetary Economics, 139, 110-126. [link](https://www.sciencedirect.com/science/article/pii/S0304393223000740?casa_token=1glEZKEF3SsAAAAA:1N9OYe0N-WknNuD2jI9EZhvQ6abxYswddZYPgZ1_udhzWjIt8peIkZLDlM9sHAiR6s7yL4oIcQ)
+
+Some models for emotion recognition in texts [model1](https://huggingface.co/michellejieli/emotion_text_classifier) [model2](https://huggingface.co/mrm8488/t5-base-finetuned-emotion)
+
+Some models for emotion recognition in speech [model1](https://huggingface.co/r-f/wav2vec-english-speech-emotion-recognition)
+
+Some models for emotion recognition in faces [model1](https://huggingface.co/ElenaRyumina/face_emotion_recognition) [model2](https://huggingface.co/trpakov/vit-face-expression)
+
+</details>
