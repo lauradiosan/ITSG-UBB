@@ -36,11 +36,20 @@ Sapt 14: Complex networks -->
 
 ## Despre proiecte
 
-Proiectul pe care trebuie să-l realizaţi este o oportunitate de a explora o problemă din domeniul Inteligentei Artificiale (AI) în contextul unor date reale. Proiectul va fi evaluat atat la finalul semestrului, cat si pe parcursul semestrului cand fiecare echipă va trebui să prezinte cadrului didactic îndrumător aplicaţia realizată şi raportul tehnic aferent ei. Propuneri de teme pentru proiecte [link](2025-2026\projects.md)
+Proiectul pe care trebuie să-l realizaţi este o oportunitate de a explora o problemă din domeniul Inteligentei Artificiale (AI) în contextul unor date reale. Proiectul va fi evaluat atat la finalul semestrului, cat si pe parcursul semestrului cand fiecare echipă va trebui să prezinte cadrului didactic îndrumător aplicaţia realizată şi raportul tehnic aferent ei. Propuneri de teme pentru proiecte [link](projects.md)
+
+Proiectul implică:
+- alegerea unei teme
+- formarea unei echipe de 2-4 membri
+- rezolvarea unei probleme cu ajutorul unei tehnici de AI din cele enumerate mai jos şi analiza rezultatelor obţinute (analiza numerica si cu ajutorul unui model de Explainable AI).
+- dezvoltarea aplicatiei (care integreaza algoritmii inteligenti)
+- redactarea documentatiei (raportului)
+- realizarea unei postari pe un blog tehnic (e.g. Medium) - optional
+- prezentarea proiectului
 
 **Metode de AI**
 
-1. Tehnici bazate pe retele neruonale si transformere
+1. Tehnici clasice de IA (algoritmi de optimizare, sisteme inteligente, algoritmi de invatare)
 
 2. Tehnici de tip Federated learning
     - [link](https://federated.withgoogle.com/), 
@@ -59,21 +68,9 @@ Proiectul pe care trebuie să-l realizaţi este o oportunitate de a explora o pr
     - [link](https://christophm.github.io/interpretable-ml-book/index.html)
     - [link](https://ema.drwhy.ai/preface.html)
 
-
-
-Proiectul implică:
-- alegerea unei teme
-- formarea unei echipe de 2-4 membri
-- rezolvarea unei probleme cu ajutorul unei tehnici de AI din cele enumerate mai sus şi analiza rezultatelor obţinute (analiza numerica si cu ajutorul unui model de Explainable AI).
-- dezvoltarea aplicatiei (care integreaza algoritmii inteligenti)
-- redactarea documentatiei (raportului)
-- realizarea unei postari pe un blog tehnici (e.g. Medium)
-- prezentarea proiectului
-
-
 **Dezvoltarea aplicatiei**
-In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici]().
-[Good tips](https://www.deeplearningbook.org/)
+In realizarea aplicatiei se pot folosi diferite limbaje de programare, tehnologii si instrumente specifice AI. Codebase-urile aferente aplicatiilor trebuie incarcate, inainte de expirarea termenelor, [aici](https://classroom.github.com/a/eu1mQna3).
+
 
 **Raportul tehnic**
 Trebuie redactat in latex conform modelului de [aici](Report/texModel/model.tex) si trebuie sa fie structurat conform recomandarilor de [aici](Report/readme.md). 
