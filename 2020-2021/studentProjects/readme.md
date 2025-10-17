@@ -14,7 +14,7 @@ Echipa07 Teaser [link](Echipa07/ITSG_Teaser_video.mp4)
 
 Echipa08 Teaser [link](https://www.youtube.com/watch?v=5zqJUUvHgUE&feature=youtu.be)
 
-Echipa09
+Echipa09 Teaser [link](https://drive.google.com/file/d/1dIqCRtf-Ur-qENeXJuDxNyMeGLW5CuN_/view?usp=sharing)
 
 Echipa10 Teaser [link](Echipa10/teaser.mp4)
 
