@@ -96,5 +96,5 @@ Trebuie realizata o prezentare si un scurt video (teaser) aferente muncii realiz
 **Criterii de evaluare**
 Detalii despre continutul evaluarii si termenele de predare intermediare se gasesc [aici](Eval/readme.md)
 
-Situatie punctaje [aici](?)
+Situatie punctaje [aici](https://ubbcluj-my.sharepoint.com/:x:/g/personal/laura_diosan_ubbcluj_ro/ETvezBY89ZFFjxcQ_sf-en0BT81mfZFTNJLPMhMGYgWjnQ?e=ojFjSy)
 
